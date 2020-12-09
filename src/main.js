@@ -4,9 +4,7 @@ export default class App {
         let suma = 0;
 
         for(let i = 1; i <= numero; i = i + 1){
-            let fraccion = 1 / i;
-            suma = suma + fraccion;
-            fraccion = 0;
+            suma = suma + (1 / i);
         }
 
       return suma;
