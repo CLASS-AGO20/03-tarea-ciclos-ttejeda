@@ -9,8 +9,28 @@ export default class App {
 
       return suma;
     }
+
+    sumatoriaSerieDos(numero){
+        let i = 1;
+        let suma = 0;
+
+        while(i <= numero){
+            
+            if(i % 2 == 0 || i == 1){
+              suma = suma + (1 / i);
+            } else {
+              suma = suma - (1 / i);
+            }
+
+          i = i + 1;
+        }
+
+      return suma;
+    }
 }
 
 let app = new App();
 
 console.log(app.sumatoriaSerieUno(9));
+
+console.log(app.sumatoriaSerieDos(9));
