@@ -29,25 +29,22 @@ export default class App {
     }
 
     esPrimo(numero){
-        let i = 1;
-        let p;
+        let i = 2;
+        let primo;
+        let limite = Math.round(Math.sqrt(numero));
 
         do {
         
           if (numero % i == 0){
-           p = p + 1;
+           return primo = false;
+          } else {
+            primo = true;
           }
 
           i = i + 1;
-        } while (i <= numero)
+        } while (i <= limite);
 
-        if(p > 2){
-          p = false;
-        } else {
-          p = true;
-        }
-
-      return p;
+      return primo;
     }
 }
 
@@ -57,5 +54,5 @@ console.log(app.sumatoriaSerieUno(9));
 
 console.log(app.sumatoriaSerieDos(9));
 
-console.log(app.esPrimo(2));
+console.log(app.esPrimo(11));
 console.log(app.esPrimo(77));
