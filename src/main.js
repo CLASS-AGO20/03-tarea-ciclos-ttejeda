@@ -49,23 +49,23 @@ export default class App {
 
     obtenerMultiplos(inicio, fin){
       
-      if (inicio > fin){
-        let m = inicio;
-        incio = fin;
-        fin = m;
-      }
+        if (inicio > fin){
+         let m = inicio;
+         incio = fin;
+          fin = m;
+       }
 
-      let i = inicio;
-      let numeros = "";
+        let i = inicio;
+        let numeros = "";
       
-      do{
+        do{
 
-        if (i % 3 == 0){
-          numeros = numeros + i;
-        }
+          if (i % 3 == 0){
+            numeros = numeros + i;
+          }
 
-        i = i + 1;
-      } while (i <= fin);
+          i = i + 1;
+        } while (i <= fin);
 
       return numeros;
     }
